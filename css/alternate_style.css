@@ -1,0 +1,201 @@
+
+/*
+	Author: Estrella Lucero
+	Date: January 27, 2020
+	Subject: Web Development and Design 2- Homework 3 
+*/
+
+@font-face {
+    font-family: 'montserratmedium';
+    src: url('fonts/montserrat-medium-webfont.woff2') format('woff2'),
+         url('fonts/montserrat-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'montserratregular';
+    src: url('fonts/montserrat-regular-webfont.woff2') format('woff2'),
+         url('fonts/montserrat-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
+
+@font-face {
+    font-family: 'montserratsemibold';
+    src: url('fonts/montserrat-semibold-webfont.woff2') format('woff2'),
+         url('fonts/montserrat-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html, body{
+	height: 100%;
+} 
+body{
+	width: 1280px;
+	background-color:  #ccccff;
+	margin: auto;
+	padding: 0;
+	overflow: auto;
+	padding-bottom: 100px;
+	font-family: 'montserratregular';
+
+}
+
+#navbar {
+    height: 100%;
+    width: 290px;
+    padding-top: 235px;
+    overflow: auto;
+    float: left;
+    margin-right: 40px;
+    background-color: #9966cc;
+}
+
+nav img{
+	display: none;
+}
+
+nav a{
+	display: block;
+	float: left;
+	font-family: 'montserratsemibold';
+	font-size: 1.1em;
+	width: 85%;
+	text-align: right;
+	padding: 20px 0;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #FFFFFF;
+
+}
+
+nav a:hover{
+	color: #3F0259;
+}
+
+.content{
+	height: 100%;
+	background-color:#DDE1FE;
+	padding: 30px 0 200px 40px;
+	
+}
+
+.page-title-content{
+	width: 70%;
+	margin-left: 300px;
+	border-bottom: 2.5px dotted;
+	border-color: #9966cc;
+	padding-bottom: 30px;
+}
+
+.page-title-content img{
+	width: 237px;
+	height: 173px;
+	padding: 15px;
+	margin: 0 330px;
+	
+}
+
+h1{
+	font-family: 'montserratmedium';
+	color: #7546C7;
+	text-align: center;
+	margin-top: 0px;
+}
+
+.presentation{
+	margin-top: 60px;
+	margin-right: 40px;
+	overflow: auto;
+}
+
+.profile-picture{
+	float: right;
+	margin-right: 40px;
+	margin-left: 20px;
+	border: 5px solid;
+	border-color: #ccccff;
+	max-height: 296px;
+	border-radius: 15px;
+}
+
+.profile-picture img{
+	border-radius: 15px;	
+}
+
+.description{
+	float: left;
+	width: 440px;
+}
+
+.description > p{
+	text-align: right;
+	line-height: 1.5em;
+}
+
+.description p:first-letter{
+	font-family: 'montserratsemibold';
+	font-size: 1.5em;
+	color:#9966cc;
+}
+
+.description strong{
+	font-family: 'montserratmedium';
+}
+
+.favorite-websites{
+	padding-right: 40px;
+	overflow: auto;
+	margin-top: 50px;
+	margin-right: 40px;
+}
+
+.favorite-websites img{
+	width: 50px;
+	height: 50px;
+	float: left;
+	margin-top: 20px;
+	margin-left: 80px;
+}
+
+.favorite-websites a{
+	text-decoration: none;
+	color: #F55D18;
+}
+
+.favorite-websites a:hover{
+	color: #AF3DC2;
+}
+
+.website-content p{
+	width: 700px;
+	float: right;
+	display: block;
+	line-height: 1.5em;
+
+}
+
+h2{
+	font-family: 'montserratmedium';
+	color: #7546C7;
+	text-align: left;
+	width: 250px;
+	margin-left: 172px;
+
+}
+
+#fav2 img{
+	clear: right;
+}
+

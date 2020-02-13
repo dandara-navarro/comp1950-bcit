@@ -1,0 +1,93 @@
+/*
+    Author: Dandara Navarro
+*/
+body {
+    margin: 0;
+}
+
+#navbar {
+    height: 100%;
+    width: 200px;
+    background-color: #e4d4cd;
+    position: fixed!important;
+    z-index: 1;
+    overflow: auto;
+}
+
+.content {
+    margin-left: 200px;
+    background-color: #f7ead9;
+    text-align: center;
+}
+
+.page-title-content {
+    padding-bottom: 20px; 
+}
+
+.presentation {
+    display: flex;
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #e4d4cd;
+}
+
+.profile-picture img {
+    border: 2px solid #4a1260;
+}
+
+.favorite-websites {
+    background-color: #f7ead9; 
+}
+
+.description p {
+    font-size: 20px;
+    font-family: verdana;
+    color: purple;
+    padding: 10px 20px;
+}
+
+.page-title {
+    color: #4a1260;
+    font-family: cursive;
+    margin: 0;
+}
+
+.item-menu {
+    display: block;
+    text-decoration: none;
+    line-height: 60px;
+    text-align: center;
+    font-family: verdana;
+    color: #4a1260;
+}
+
+.item-menu:hover {
+    background-color: #4a1260;
+    color: #e8b87a;
+    cursor: pointer;
+}
+
+.favorite-websites .website-content{
+    display: flex;
+    padding: 20px 30px;
+    color: #4a1260;
+    font-family: verdana;
+    font-size: 14px;
+}
+
+.favorite-websites a {
+    text-decoration: none;
+}
+
+.favorite-websites img {
+    height: 60px;
+}
+
+.favorite-websites p {
+    margin-left: 10px;
+}
+
+.favorite-websites h2 {
+    font-family: verdana;
+    color: #4a1260;
+}
