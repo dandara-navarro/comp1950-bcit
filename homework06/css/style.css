@@ -1,0 +1,106 @@
+/* Dandara's CSS Code*/
+
+body {
+    margin: 0;
+    display: block;
+    background-color: #bbbb69;
+    font-family: verdana;
+}
+
+header {
+    text-align: center;
+    background-color: #990033;
+    padding: 10px;
+    color: #FFFFFF;
+}
+
+article {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2px;
+    background-color: #CCCC99;
+}
+
+.section-title {
+    text-align: center;
+    color: #666633;
+}
+.place-image {
+    width: 400px;
+}
+
+.content-1 {
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.content-2 {
+    display: flex;
+    padding: 5px 60px 20px 10px;
+    margin: 15px 25px;
+    max-width: 100%;
+    width: 1080px;
+    background-color: #990033;
+}
+
+.content-2 figcaption p {
+    text-align: center;
+    color: #CCCC99;
+}
+
+.page-links {
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+    background-color: #666633;
+}
+
+.page-links li {
+    list-style-type: none;
+    padding: 15px;
+}
+
+.page-links a:hover {
+    background-color: #CCCC99;
+    cursor: pointer;
+    color: #666633;
+}
+
+.page-links li a {
+    text-decoration: none;
+    font-family: verdana;
+    font-size: 15px;
+    color: #FFFFFF;
+    padding: 15px;
+}
+
+.add-info-box {
+    background-color: #CCCC99;
+    width: 600px;
+    min-height: fit-content;
+    margin: 17px auto;
+    padding: 0 10px;
+}
+
+.add-info-box p {
+    text-decoration: none;
+    color: #990033;
+}
+
+.add-info-box h4 {
+    color: #484823;;
+}
+
+.margin-auto {
+    margin: auto;
+}
+
+.container1 img {
+    height: 449.81px
+}
+
+@media (max-width:1040px){	
+	.add-info-box ul li{
+		font-size: 12px
+	}	
+}

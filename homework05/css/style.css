@@ -1,0 +1,184 @@
+/* 
+    http://meyerweb.com/eric/tools/css/reset/ 
+    v2.0 | 20110126
+    License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+    Author: Dandara Navarro
+*/
+.container {
+    display: grid;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header {
+    line-height: 60px;
+    display: flex;
+    justify-content: center;
+    background-color: #fbe8a6;
+}
+
+header p {
+    font-size: 60px;
+    background: -webkit-linear-gradient( #5f3c5c , #F4976C);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 15px;
+}
+
+main {
+    display: grid;
+    background-color: #FBE8A6;
+    grid-template-areas: "synopsis synopsis synopsis book-cover book-cover"
+                         "author author author author author"
+                         "resource1 resource1 resource1 resource1 resource1";
+    grid-auto-columns: 20%;
+    
+}
+
+footer {
+    background-color: #fbe8a6;
+    text-align: center;
+    padding: 14px;
+}
+
+.wrap-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 10px;
+    border-radius: 20px;
+}
+
+.book-title {
+    font-size: 50px;
+    color: #5f3c5c;
+    text-shadow: 3px 1px 2px rgb(95, 60, 92);
+    margin-top: 50px;
+}
+
+#book-cover {
+    grid-area: book-cover;
+    background-color: #5f3c5c;
+}
+
+#book-cover img {
+    height: 300px;
+    margin: 20px;
+    transition: opacity 1s linear;
+}
+
+#book-cover figure {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#book-cover figure figcaption {
+    margin-bottom: 20px;
+    color: #f7a070;
+}
+
+#book-synopsis {
+    grid-area: synopsis;
+    background-color: #F4976C;
+}
+
+.synopsis {
+    margin: 0 65px;
+    font-size: 25px;
+    color: #5f3c5c;
+}
+
+.hover-opacity:hover {
+    opacity: 40%;
+    cursor: pointer;
+}
+
+#about-author {
+    grid-area: author;
+    background-color: #FBE8A6;
+    display: flex;
+    padding: 15px 30px;
+    justify-content: space-between;
+}
+
+#about-author img{
+    height: 250px;
+    border-radius: 50px;
+    transition: opacity 1s ease;
+}
+
+#about-author figcaption {
+    text-align: center;
+}
+
+#about-author p {
+    width: 60%;
+    margin-top: 50px;
+}
+
+#resource1 {
+    grid-area: resource1;
+    background-color: #F4976C;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#resource1 p {
+    font-size: 25px;
+    margin: 20px;
+    color: #FBE8A6;
+}
+
+#resource1 a {
+    text-decoration: none;
+    margin: 10px;
+}

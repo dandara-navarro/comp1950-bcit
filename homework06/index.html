@@ -1,0 +1,180 @@
+<!--
+    Author: Dandara Navarro
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Jquery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/style.css" />
+    <link rel="stylesheet" href="css/twentytwenty.css" type="text/css" media="screen" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="js/jquery.event.move.js"></script>
+    <script defer src="js/jquery.twentytwenty.js"></script>
+    <script defer src="js/jquery.scrollme.js"></script>  
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Jquery Plugins</h1>
+    </header>
+
+    <nav>
+        <ul class="page-links">
+            <li><a id="select-restaurants" href="#twentytwenty">TwentyTwenty</a></li>
+            <li><a id="select-cities" href="#scrollme">Scrollme</a></li>
+        </ul>
+    </nav>
+
+    <section id="twentytwenty">
+        <h3 class="section-title">TwentyTwenty</h3>
+        <article class="twenty-container">
+            <div class="content-2">
+                <figure>
+                    <div id="container1" class="twentytwenty-container">
+                        <img src="img/dog-before.jpg" alt="Poodle before grooming"/>
+                        <img src="img/dog-after.jpg" alt="Poodle after grooming"/>
+                    </div>
+                    <figcaption>
+                        <p>TwentyTwenty plugin showing the before and after of a dog</p>
+                    </figcaption>
+                </figure>
+                <div class="add-info-box">
+                    <h4>TwentyTwenty Plugin</h4>
+                    <p>The TwentyTwenty plugin emerged from the necessity of compare two different images identifying
+                        better the diferences between them. TwentyTwenty works by stacking two images on top of each other. 
+                        As the slider moves across the image, it makes use of the CSS clip property to trim the image on the left. 
+                        This allows the image on the right to show through the container. </p>
+                    <h4>References</h4>
+                    <ul>
+                        <li>
+                            <a href="https://github.com/zurb/twentytwenty">TwentyTwenty GitHub</a>
+                        </li>
+                        <li>
+                            <a href="https://zurb.com/playground/twentytwenty">Zurb</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+        <article class="twenty-container">
+           <div class="content-2">
+                <figure>
+                    <div id="container2" class='twentytwenty-container'>
+                        <img src="img/dog2-before.jpg" alt="Yorkshire before grooming" />
+                        <img src="img/dog2-after.jpg" alt="Yorkshire after grooming"/>
+                    </div>
+                    <figcaption>
+                        <p>Twenty-twenty plugin showing the before and after of a dog</p>
+                    </figcaption>
+                </figure>
+                <div class="add-info-box">
+                    <h4>Customized behaviours</h4>
+                    <p>In this example, I made two modifications in the default behavior of the plugin: </p>
+                        <ul>
+                            <li>
+                                I changed the slider orientation from horizontal to vertical
+                            </li>
+                            <li>
+                                I permited that the movement of the slider to be made by mouse hover movement
+                            </li>
+                        </ul>
+                </div>
+           </div>
+        </article>
+    </section>
+
+    <section id="scrollme">
+        <h3 class="section-title">ScrollMe</h3>
+        <article>
+            <div class="content-2">
+                <figure>
+                    <div class="scrollme">
+                        <div 
+                            class="animateme"
+                            data-when="span"
+                            data-from="0"
+                            data-to="1"
+                            data-easing="easeinout"
+                            data-rotatey="360">
+                        <img class="place-image" src="img/joaopessoa.jpg" alt="Joao Pessoa">
+                        </div>
+                    </div>
+                    <figcaption>
+                        <p>Tambau beach view in Joao Pessoa city</p>
+                    </figcaption>
+                </figure>
+                <div class="add-info-box">
+                    <h4>ScrollMe Plugin</h4>
+                    <p>The ScrollMe plugin can add simple scrolling effects to web pages with simple codes.
+                            As you scroll down the page ScrollMe can scale, rotate, translate and change the 
+                            opacity of elements on the page. It's easy to set up and not a single line of javascript is required.
+                    </p>
+                    <h4>References</h4>
+                    <ul>
+                        <li>
+                            <a href="https://github.com/nckprsn/scrollme">ScrollMe GitHub</a>
+                        </li>
+                        <li>
+                            <a href="https://codepen.io/nckprsn/pen/IGpmc">ScrollMe CodePen</a>
+                        </li>
+                        <li>
+                            <a href="http://scrollme.nckprsn.com/">ScrollMe website</a>
+                        </li>
+                    </ul>   
+                </div>  
+            </div>
+        </article>
+
+        <article>
+            <div class="content-2">
+                <figure>
+                    <div class="scrollme">
+                        <div class="animateme" data-when="view" data-from="0.55" data-to="0.05" data-scale="0" >
+                            <img class="place-image" src="img/jeri.jpg" alt="Jericoacoara Beach">
+                        </div>
+                    </div>
+                    <figcaption>
+                        <p>Jericoacoara beach with nets in the sea</p>
+                    </figcaption>
+                </figure>
+                <div class="add-info-box">
+                        <h4>Customized behaviours</h4>
+                        <p>To use ScrollMe plugin it is necessary to:</p>
+                        <ul>
+                            <li>
+                                Import ScrollMe Javascript file
+                            </li>
+                            <li>
+                                Have a div with the class 'scrollme' and inside this another div with the class 'animateme'
+                            </li>
+                            <li>
+                                In the second div you can modify the scroll moviment configuring pre-defined attributes, such as 
+                                'data-when', 'data-from', 'data-to', 'data-opacity', etc.
+                            </li>
+                        </ul>     
+
+                        <p>To animate this image beside I used the following configuration:</p>
+                        <ul>
+                            <li>
+                                data-when="view" (Determines when the scrolling boundaries start and end)
+                            </li>
+                            <li>
+                                data-from="0.55" (Specifies the position within through the scrolling boundaries at which the animation starts)
+                            </li>
+                            <li>
+                                data-to="0.05" (Specifies the position within through the scrolling boundaries at which the animation ends)
+                            </li>
+                            <li>
+                                data-scale="0" (Specifies the scale of the animated element (optionally along the X, Y & Z axis) when scrolling arrives at the the to position.)
+                            </li>
+                        </ul>
+                    </div>
+                </div>   
+        </article>
+    </section>
+</body>
+</html>
