@@ -8,32 +8,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Dandara's page</title>
-    <link rel="icon" href="img/icon.png">
-    <link rel="stylesheet" href="css/style.css" title="Default" type="text/css" />
-    <link rel="alternate stylesheet" href="css/alternate_style.css" title="Estrella Lucero" type="text/css" />
+    <link rel="icon" href="/students/dnavarro9/img/icon.png">
+    <link rel="stylesheet" href="/students/dnavarro9/css/style.css" title="Default" type="text/css" />
+    <link rel="alternate stylesheet" href="/students/dnavarro9/css/alternate_style.css" title="Estrella Lucero" type="text/css" />
     
 </head>
 <body>
     <nav id="navbar">
-        <img src="img/logo.png" alt="Website logo">
+        <img src="/students/dnavarro9/img/logo.png" alt="Website logo">
         <a class="item-menu" href="#">Home</a>
-        <a class="item-menu" href="homework02/index.html">HTML 5</a>
+        <a class="item-menu" href="/students/dnavarro9/homework02/index.html">HTML 5</a>
         <a class="item-menu" href="http://bcitcomp.ca/students/elucerodelarosa/">CSS Selectors</a>
-        <a class="item-menu" href="homework04/index.html">CSS3 layout</a>
-        <a class="item-menu" href="homework05/index.html">Responsive layout</a>
-        <a class="item-menu" href="homework06/index.html">jQuery</a>
-        <a class="item-menu" href="#">Server-side</a>
+        <a class="item-menu" href="/students/dnavarro9/homework04/index.html">CSS3 layout</a>
+        <a class="item-menu" href="/students/dnavarro9/homework05/index.html">Responsive layout</a>
+        <a class="item-menu" href="/students/dnavarro9/homework06/index.html">jQuery</a>
+        <a class="item-menu" href="/students/dnavarro9/homework07/wrongURL">Server-side</a>
         <a class="item-menu" href="#">Templates</a>
     </nav>
     <div class="content">
         <div class="page-title-content">
-            <img src="img/logo-image.png" alt="Website Logo">
+            <?php 
+                date_default_timezone_set("Canada/Pacific");
+
+                $today = date("F j, Y, H:iA");	
+
+                echo "<p class='date-now'>$today</p>";
+            ?>
+            <img src="/students/dnavarro9/img/logo-image.png" alt="Website Logo">
             <h1 class="page-title">Dandara Navarro</h1>
         </div>
         
         <div class="presentation">
             <div class="profile-picture">
-                <img src="img/profile.png" alt="Profile picture">
+                <img src="/students/dnavarro9/img/profile.png" alt="Profile picture">
             </div>
             <div class="description">
                 <p>My name is Dandara Navarro. I'm from Brazil and I've been here in Canada since September 2019.
@@ -47,7 +54,7 @@
         <div class="favorite-websites">
             <h2>Favorite websites</h2>
             <div id="fav1" class="website-content">
-                <img src="img/youtube-icon.png" alt="Youtube Icon">
+                <img src="/students/dnavarro9/img/youtube-icon.png" alt="Youtube Icon">
                 <p>On the <a target="_blank" href="https://www.youtube.com/">Youtube</a> I can choose the subject that I want or need to see. 
                 I can find many courses, learn how to cook and learn how to do anything by myself. 
                 By Subscribing in my favorite channels I can also follow all the subjects posted in 
@@ -55,7 +62,7 @@
                 </p>
             </div>
             <div id="fav2" class="website-content">
-                <img src="img/w3.png" alt="W3schools Icon">
+                <img src="/students/dnavarro9/img/w3.png" alt="W3schools Icon">
                 <p>The <a target="_blank" href="https://www.w3schools.com/">W3schools</a> is my favorite webpage to work and study web Development
                 concepts. There I can find many tutorials with examples and emulators where I can try to modify the code and
                 see if it works to apply to my solution. Its interface is very clear and easy to find what I want.  

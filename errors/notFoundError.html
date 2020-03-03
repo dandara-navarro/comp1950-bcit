@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<!--
+    Author: Dandara Navarro
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Page not found</title>
+    <link rel="icon" href="/students/dnavarro9/img/icon.png">
+    <link rel="alternate stylesheet" href="/students/dnavarro9/css/alternate_style.css" title="Estrella Lucero" type="text/css" />
+    <link rel="stylesheet" href="/students/dnavarro9/css/style.css" title="Default" type="text/css" />
+</head>
+<body>
+    <nav id="navbar">
+        <img src="/students/dnavarro9/img/logo.png" alt="Website logo">
+        <a class="item-menu" href="#">Home</a>
+        <a class="item-menu" href="/students/dnavarro9/homework02/index.html">HTML 5</a>
+        <a class="item-menu" href="http://bcitcomp.ca/students/elucerodelarosa/">CSS Selectors</a>
+        <a class="item-menu" href="/students/dnavarro9/homework04/index.html">CSS3 layout</a>
+        <a class="item-menu" href="/students/dnavarro9/homework05/index.html">Responsive layout</a>
+        <a class="item-menu" href="/students/dnavarro9/homework06/index.html">jQuery</a>
+        <a class="item-menu" href="/students/dnavarro9/homework07/wrongURL">Server-side</a>
+        <a class="item-menu" href="#">Templates</a>
+    </nav>
+    <div class="content">
+        <div class="page-title-content">
+            <?php 
+                date_default_timezone_set("Canada/Pacific");
+
+                $today = date("F j, Y, H:iA");	
+
+                echo "<p class='date-now'>$today</p>";
+            ?>
+            <img src="/students/dnavarro9/img/logo-image.png" alt="Website Logo">
+            <h1 class="page-title">Dandara Navarro</h1>
+        </div>
+        
+        <div class="presentation error-presentation">
+            <div class="error-description">
+                <h2>
+                    Sorry, this page does not exist! Error code: 404.
+                </h2>
+                <img src="/students/dnavarro9/img/404-dog.png" alt="Sad dog because of the Error 404">
+            </div>
+        </div>
+    </div>
+</body>
+</html>

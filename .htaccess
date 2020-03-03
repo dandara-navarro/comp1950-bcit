@@ -1,0 +1,33 @@
+# .htaccess 
+# ------------
+# the .htaccess file customizes how the Apache server will behave with directives
+# comments in .htaccess begin with a number sign (like this line does)
+# instructions without number sign in front are directives
+# learn more about .htaccess: https://www.askapache.com/htaccess/
+
+
+# ----------------------------------------
+# Ensure server uses correct character encoding
+AddDefaultCharset UTF-8
+
+
+# ----------------------------------------
+# Server will use British Columbia time zone
+SetEnv TZ Canada/Pacific
+
+
+# ----------------------------------------
+# Enable directory browsing
+#	use: Options All +Indexes
+# Disable directory browsing
+# 	use: Options All -Indexes
+Options All +Indexes
+
+
+# ErrorDocument <errorNumber> <path>
+# Direct 'Page not found' errors to a specified page			
+ErrorDocument 404 /students/dnavarro9/errors/notFoundError.html
+
+# AddType and AddHandler can be instructed to parse .html files as .php
+AddType application/x-httpd-php .html
+AddHandler application/x-httpd-php .html

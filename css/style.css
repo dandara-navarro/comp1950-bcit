@@ -31,12 +31,20 @@ body {
     background-color: #e4d4cd;
 }
 
+.presentation.error-presentation {
+    justify-content: center;
+}
+
 .profile-picture img {
     border: 2px solid #4a1260;
 }
 
 .favorite-websites {
     background-color: #f7ead9; 
+}
+
+.description {
+    text-align: center;
 }
 
 .description p {
@@ -90,4 +98,29 @@ body {
 .favorite-websites h2 {
     font-family: verdana;
     color: #4a1260;
+}
+
+.error-description .number-style {
+    font-size: 60px;
+    color: #4a1260;
+}
+
+.error-description h2 {
+    font-family: verdana;
+    color: purple;
+}
+
+.error-description {
+    justify-content: center;
+}
+
+.error-description img {
+    height: 500px;
+}
+
+.date-now {
+    right: 15px;
+    position: absolute;
+    font-family: cursive;
+    color: orange;
 }
